@@ -1,2 +1,0 @@
-﻿api testi ve swagger
-webUI de controllersdan bir şey sildim yanlıslıkla
