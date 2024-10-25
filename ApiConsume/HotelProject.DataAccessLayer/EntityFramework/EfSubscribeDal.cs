@@ -10,9 +10,9 @@ using HotelProject.EntityLayer.Concrete;
 
 namespace HotelProject.DataAccessLayer.EntityFramework
 {
-    public class EfSubsribeDal:GenericRepository<Subscribe>,ISubsribeDal
+    public class EfSubscribeDal:GenericRepository<Subscribe>,ISubscribeDal
     {
-        public EfSubsribeDal(Context context):base(context)
+        public EfSubscribeDal(Context context):base(context)
         {
             
         }

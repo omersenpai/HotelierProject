@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace HotelProject.DataAccessLayer.EntityFramework
 {
-    public class EfAboutDal : GenericRepository<About>, IAboutDal
+    public class EfAboutDal : GenericRepository<About>, IAboutDal //özelleştirilmiş metotlar(farklı olarak) yazmak için IAboutDal oluşturduk.
     {
         public EfAboutDal(Context context) : base(context)
         {

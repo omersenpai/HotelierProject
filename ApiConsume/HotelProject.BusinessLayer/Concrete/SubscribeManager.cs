@@ -1,6 +1,9 @@
 ﻿using HotelProject.BusinessLayer.Abstract;
 using HotelProject.DataAccessLayer.Abstract;
+using HotelProject.DataAccessLayer.Concrete;
+using HotelProject.DataAccessLayer.EntityFramework;
 using HotelProject.EntityLayer.Concrete;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,39 +12,39 @@ using System.Threading.Tasks;
 
 namespace HotelProject.BusinessLayer.Concrete
 {
-    public class SubscribeManager : ISubsribeService
+    public class SubscribeManager : ISubscribeService
     {
 
-        private readonly ISubsribeDal _subsribeDal;
+        private readonly ISubscribeDal _subscribeDal;
 
-        public SubscribeManager(ISubsribeDal subsribeDal)
+        public SubscribeManager(ISubscribeDal subscribeDal) //katmanlar arası iletişimi saglar.
         {
-            _subsribeDal = subsribeDal;
+            _subscribeDal = subscribeDal;
         }
 
         public void TDelete(Subscribe t)
         {
-            _subsribeDal.Delete(t);
+            _subscribeDal.Delete(t);
         }
 
         public Subscribe TGetById(int id)
         {
-           return _subsribeDal.GetById(id);
+            return _subscribeDal.GetById(id);
         }
 
         public List<Subscribe> TGetList()
         {
-            return _subsribeDal.GetList();
+            return _subscribeDal.GetList();
         }
 
         public void TInsert(Subscribe t)
         {
-            _subsribeDal.Insert(t);
-                }
+            _subscribeDal.Insert(t);
+        }
 
         public void TUpdate(Subscribe t)
         {
-            _subsribeDal.Update(t);
+            _subscribeDal.Update(t);
         }
     }
 }

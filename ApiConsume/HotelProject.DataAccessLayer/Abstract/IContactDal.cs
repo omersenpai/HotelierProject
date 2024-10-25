@@ -7,8 +7,7 @@ using System.Threading.Tasks;
 
 namespace HotelProject.DataAccessLayer.Abstract
 {
-    public interface ISubsribeDal:IGenericDal<Subscribe>
+    public interface IContactDal:IGenericDal<Contact>
     {
-
     }
 }

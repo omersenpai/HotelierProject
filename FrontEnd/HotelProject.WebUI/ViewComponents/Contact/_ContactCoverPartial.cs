@@ -1,8 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 
-namespace HotelProject.WebUI.ViewComponents.Default
+namespace HotelProject.WebUI.ViewComponents.Contact
 {
-    public class _SubscribePartial:ViewComponent
+    public class _ContactCoverPartial:ViewComponent
     {
         public IViewComponentResult Invoke()
         {

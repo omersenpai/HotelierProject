@@ -10,6 +10,17 @@ namespace HotelProject.DataAccessLayer.Concrete
         {
             optionsBuilder.UseSqlServer("server=DESKTOP-KM7D4VT;initial catalog=ApiDb;TrustServerCertificate=true;Integrated Security=true");
         }
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {//bu metodu override ediyorsanız, modelin nasıl yapılandırılacağını özelleştirebilirsiniz.Çakışma olmasın diye eklendi.
+            base.OnModelCreating(modelBuilder);
+            modelBuilder.Entity<Room>().ToTable(tb => tb.HasTrigger("Roomdecrease")).ToTable(tb => tb.HasTrigger("Roomincrease"));
+            modelBuilder.Entity<Staff>().ToTable(tb => tb.HasTrigger("Staffdecrease")).ToTable(tb => tb.HasTrigger("Staffincrease"));
+            modelBuilder.Entity<Guest>().ToTable(tb => tb.HasTrigger("Guestdecrease")).ToTable(tb => tb.HasTrigger("Guestincrease"));
+
+        }
+
+
+
         //Aşağıda tanımlanan DbSet özellikleri, Entity Framework ile veritabanında hangi tabloların yönetileceğini belirtir.
 
         public DbSet<Room> Rooms { get; set; }
@@ -18,6 +29,9 @@ namespace HotelProject.DataAccessLayer.Concrete
         public DbSet<Subscribe> Subscribes { get; set; }
         public DbSet<Testimonial> Testimonials { get; set; }
         public DbSet<About> Abouts { get; set; }
+        public DbSet<Booking> Bookings { get; set; }
+        public DbSet<Guest> Guests { get; set; }
+        public DbSet<Contact> Contacts { get; set; }
 
         
        

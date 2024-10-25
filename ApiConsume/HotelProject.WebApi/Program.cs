@@ -3,6 +3,7 @@ using HotelProject.BusinessLayer.Concrete;
 using HotelProject.DataAccessLayer.Abstract;
 using HotelProject.DataAccessLayer.Concrete;
 using HotelProject.DataAccessLayer.EntityFramework;
+using HotelProject.WebApi.Controllers;
 using Microsoft.AspNetCore.WebSockets;
 using Microsoft.EntityFrameworkCore;
 
@@ -20,8 +21,8 @@ builder.Services.AddScoped<IServiceService, ServiceManager>();
 builder.Services.AddScoped<IRoomDal, EfRoomDal>();
 builder.Services.AddScoped<IRoomService, RoomManager>();
 
-builder.Services.AddScoped<ISubsribeDal, EfSubsribeDal>();
-builder.Services.AddScoped<ISubsribeService, SubscribeManager>();
+builder.Services.AddScoped<ISubscribeDal, EfSubscribeDal>();
+builder.Services.AddScoped<ISubscribeService, SubscribeManager>();
 
 builder.Services.AddScoped<ITestimonialDal, EfTestimonialDal>();
 builder.Services.AddScoped<ITestimonialService, TestimonialManager>();
@@ -29,8 +30,17 @@ builder.Services.AddScoped<ITestimonialService, TestimonialManager>();
 builder.Services.AddScoped<IAboutDal, EfAboutDal>();
 builder.Services.AddScoped<IAboutService, AboutManager>();
 
+builder.Services.AddScoped<IBookingDal, EfBookingDal>();
+builder.Services.AddScoped<IBookingService, BookingManager>();
 
 
+builder.Services.AddScoped<IContactDal, EfContactDal>();
+builder.Services.AddScoped<IContactService, ContactManager>();
+
+
+
+builder.Services.AddScoped<IGuestDal, EfGuestDal>();
+builder.Services.AddScoped<IGuestService, GuestManager>();
 
 builder.Services.AddAutoMapper(typeof(Program));
 

@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace HotelProject.DataAccessLayer.Abstract
 {
-    public interface IGenericDal<T> where T : class 
-    { //veritabanı işlemleri
+    public interface IGenericDal<T> where T : class // T bir class olacak.
+    { //veritabanı işlemleri,içi boş.
         void Insert(T t);
         void Delete(T t);
         void Update(T t);
         List<T> GetList(); //Çeşitli türlerde verileri depolamak ve yönetmek için kullanılabilecek dinamik bir veri yapısı sağlar.
-        T GetById(int id); // T tipinde nesne getirir.
+        T GetById(int id); // T tipinde nesne getirir.T ihtiyaca göre şekillenir.
     }
     
     }

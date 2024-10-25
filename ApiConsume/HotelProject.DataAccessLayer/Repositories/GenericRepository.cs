@@ -11,7 +11,7 @@ namespace HotelProject.DataAccessLayer.Repositories
     public class GenericRepository<T> : IGenericDal<T> where T : class
     {
         //GenericRepository sınıfı, bir veritabanı tablosuna bağlı sınıfın (entity'nin) veri işlemlerini genel bir yapı ile sağlar.
-
+        //veritabanıyla iletişim kısmı
 
         private readonly Context _context;
 
