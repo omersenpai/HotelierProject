@@ -1,7 +1,0 @@
-﻿
-webUI de controllersdan bir şey sildim yanlıslıkla
-
-Onay Bekliyor
-Onaylandı
-İptal Edildi
-Bekletiliyor
