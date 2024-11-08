@@ -24,6 +24,10 @@ The project leverages an API-based backend architecture with MSSQL as the databa
 - **Entity Framework Core** - ORM for efficient data handling and interaction with the database.
 - **Repository Design Pattern** - For structured and reusable database operations.
 - **Email Sending Procedures** - Automated email sending for reservation confirmations.
+## Project Screenshots
+
+Here are some screenshots that showcase different aspects of the project:
+
 ![1](https://github.com/user-attachments/assets/9dfa575c-68fc-4ce9-a798-3e9f908f6b62)
 ![2](https://github.com/user-attachments/assets/13a277e6-5656-4bcd-82b4-4b513dfa95cf)
 ![4](https://github.com/user-attachments/assets/88accc38-2bab-451e-9316-f4acf9f48fe0)
