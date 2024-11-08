@@ -1,28 +1,29 @@
-Hotelier-Rapid API Project
-Welcome to the Hotelier-Rapid API Project! This project was developed under the mentorship of Murat Yücedağ and serves as a hotel reservation system with various functionalities such as catalog management, contact information, reservations, and an "About Us" section. At the heart of the project lies an Admin Panel, which is the central control unit of the application.
+
+# Hotelier-Rapid API Project
+
+Welcome to the **Hotelier-Rapid API Project**! This project was developed under the mentorship of **Murat Yücedağ** and serves as a hotel reservation system with various functionalities such as catalog management, contact information, reservations, and an "About Us" section. At the heart of the project lies an **Admin Panel**, which is the central control unit of the application.
 
 The project leverages an API-based backend architecture with MSSQL as the database and uses an MVC controller on the frontend to consume the API, providing a smooth and structured user experience.
 
-Key Technologies and Features
-ASP.NET Core API - Backend services built on a multi-layered API architecture.
-ASP.NET Identity - Security layer added to the project for user authentication and role management.
-Swagger - API documentation and testing tool for easy debugging and client interaction.
-Postman - Used for API testing and validation.
-API Consumption - Integration of internal APIs as well as external APIs.
-Rapid API Integration - Additional data such as booking information, currency rates, and flight details are integrated.
-JSON Web Token (JWT) Authentication - Secure token-based authentication.
-Login and Register Features - Core functionalities for user access and account management.
-ASP.NET Core 8.0 - Latest version of the framework for improved performance and features.
-Fluent Validation - Validation library for easy and readable validations.
-N-Tier Architecture - Cleanly structured project with separated concerns.
-DTO Layer - Data Transfer Objects for controlled data exposure.
-MVC - For organized frontend development.
-Deployment - The API has been deployed to a live environment.
-Entity Framework Core - ORM for efficient data handling and interaction with the database.
-Repository Design Pattern - For structured and reusable database operations.
-Email Sending Procedures - Automated email sending for reservation confirmations.
-Project Screenshots
-Here are some screenshots that showcase different aspects of the project:
+## Key Technologies and Features
+
+- **ASP.NET Core API** - Backend services built on a multi-layered API architecture.
+- **ASP.NET Identity** - Security layer added to the project for user authentication and role management.
+- **Swagger** - API documentation and testing tool for easy debugging and client interaction.
+- **Postman** - Used for API testing and validation.
+- **API Consumption** - Integration of internal APIs as well as external APIs.
+- **Rapid API Integration** - Additional data such as booking information, currency rates, and flight details are integrated.
+- **JSON Web Token (JWT) Authentication** - Secure token-based authentication.
+- **Login and Register Features** - Core functionalities for user access and account management.
+- **ASP.NET Core 8.0** - Latest version of the framework for improved performance and features.
+- **Fluent Validation** - Validation library for easy and readable validations.
+- **N-Tier Architecture** - Cleanly structured project with separated concerns.
+- **DTO Layer** - Data Transfer Objects for controlled data exposure.
+- **MVC** - For organized frontend development.
+- **Deployment** - The API has been deployed to a live environment.
+- **Entity Framework Core** - ORM for efficient data handling and interaction with the database.
+- **Repository Design Pattern** - For structured and reusable database operations.
+- **Email Sending Procedures** - Automated email sending for reservation confirmations.
 ![1](https://github.com/user-attachments/assets/9dfa575c-68fc-4ce9-a798-3e9f908f6b62)
 ![2](https://github.com/user-attachments/assets/13a277e6-5656-4bcd-82b4-4b513dfa95cf)
 ![4](https://github.com/user-attachments/assets/88accc38-2bab-451e-9316-f4acf9f48fe0)
