@@ -1,4 +1,4 @@
-﻿ @model CreateBookingDto
+﻿@model CreateBookingDto
 <div class="container-xxl py-5">
     <div class="container">
         <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
@@ -16,7 +16,6 @@
                     </div>
                 </div>
                 <div class="row g-3 mt-3">
-                    <!-- Alt satır için margin ekledik -->
                     <div class="col-6 text-end">
                         <img class="img-fluid rounded wow zoomIn" data-wow-delay="0.5s" src="~/hotel-html-template/img/about-3.jpg" style="width: 100%; height: auto;">
                     </div>
@@ -27,29 +26,29 @@
             </div>
             <div class="col-lg-6">
                 <div class="wow fadeInUp" data-wow-delay="0.2s">
-                    <form method="post"asp-action="AddBooking" asp-controller="Booking">
+                    <form method="post" asp-action="AddBooking" asp-controller="Booking">
                         <div class="row g-3">
                             <div class="col-md-6">
                                 <div class="form-floating">
-                                    <input type="text" class="form-control" asp-for="Name" placeholder="Adınız Soyadınız">
+                                    <input type="text" class="form-control" asp-for="Name" id="name" placeholder="Adınız Soyadınız">
                                     <label for="name">Adınız Soyadınız</label>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-floating">
-                                    <input type="email" class="form-control" asp-for="Mail" placeholder="Mail Adresiniz">
-                                    <label for="email">Mail Adresiniz</label>
+                                    <input type="email" class="form-control" asp-for="Mail" id="mail" placeholder="Mail Adresiniz">
+                                    <label for="mail">Mail Adresiniz</label>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-floating date" id="date3" data-target-input="nearest">
-                                    <input type="date" class="form-control datetimepicker-input" asp-for="CheckIn" placeholder="Giriş Tarihi" data-target="#date3" data-toggle="datetimepicker" />
+                                    <input type="date" class="form-control datetimepicker-input" asp-for="CheckIn" id="checkin" placeholder="Giriş Tarihi" data-target="#date3" data-toggle="datetimepicker" />
                                     <label for="checkin">Giriş Tarihi</label>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-floating date" id="date4" data-target-input="nearest">
-                                    <input type="date" class="form-control datetimepicker-input" asp-for="CheckOut" placeholder="Çıkış Tarihi" data-target="#date4" data-toggle="datetimepicker" />
+                                    <input type="date" class="form-control datetimepicker-input" asp-for="CheckOut" id="checkout" placeholder="Çıkış Tarihi" data-target="#date4" data-toggle="datetimepicker" />
                                     <label for="checkout">Çıkış Tarihi</label>
                                 </div>
                             </div>
@@ -97,7 +96,5 @@
                 </div>
             </div>
         </div>
-
-
     </div>
 </div>

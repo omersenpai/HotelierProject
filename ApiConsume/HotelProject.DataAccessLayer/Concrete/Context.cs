@@ -11,7 +11,7 @@ namespace HotelProject.DataAccessLayer.Concrete
             optionsBuilder.UseSqlServer("server=DESKTOP-KM7D4VT;initial catalog=ApiDb;TrustServerCertificate=true;Integrated Security=true");
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
-        {//bu metodu override ediyorsanız, modelin nasıl yapılandırılacağını özelleştirebilirsiniz.Çakışma olmasın diye eklendi.
+        {//bu metodu override ediyorsan, modelin nasıl yapılandırılacağını özelleştirebilirsin.Çakışma olmasın diye eklendi.
             base.OnModelCreating(modelBuilder);
             modelBuilder.Entity<Room>().ToTable(tb => tb.HasTrigger("Roomdecrease")).ToTable(tb => tb.HasTrigger("Roomincrease"));
             modelBuilder.Entity<Staff>().ToTable(tb => tb.HasTrigger("Staffdecrease")).ToTable(tb => tb.HasTrigger("Staffincrease"));
@@ -32,6 +32,10 @@ namespace HotelProject.DataAccessLayer.Concrete
         public DbSet<Booking> Bookings { get; set; }
         public DbSet<Guest> Guests { get; set; }
         public DbSet<Contact> Contacts { get; set; }
+
+        public DbSet<SendMessage> SendMessages { get; set; }
+        public DbSet<MessageCategory> MessageCategories { get; set; }
+        public DbSet<WorkLocation> WorkLocations { get; set; }
 
         
        

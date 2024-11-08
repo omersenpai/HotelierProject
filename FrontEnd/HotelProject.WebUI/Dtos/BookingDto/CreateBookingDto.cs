@@ -4,8 +4,8 @@
     {
         public string Name { get; set; }
         public string Mail { get; set; }
-        public DateTime CheckIn { get; set; }
-        public DateTime CheckOut { get; set; }
+        public DateTime? CheckIn { get; set; }
+        public DateTime? CheckOut { get; set; }
 
         public int AdultCount { get; set; }
         public int ChildCount { get; set; }

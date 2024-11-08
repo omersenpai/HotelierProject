@@ -12,11 +12,11 @@ namespace HotelProject.BusinessLayer.Concrete
     public class StaffManager : IStaffService
     {
 
-        private readonly IStaffDal _staffDal;
+        private readonly IStaffDal _staffDal;//StaffManager sınıfı içindeki metotların veri erişim katmanı (Data Access Layer - DAL) ile iletişim kurmasını sağlar.
 
-        public StaffManager(IStaffDal staffDal)
+        public StaffManager(IStaffDal staffDal)//StaffManager sınıfı oluşturulduğunda dışarıdan bir IStaffDal türünde bir nesne (örneğin bir DAL sınıfının implementasyonu) alır.
         {
-            _staffDal = staffDal;
+            _staffDal = staffDal;//Bu satır, constructor'da dışarıdan gelen staffDal parametresini sınıfın içindeki readonly değişkene atar.
         }
 
         public void TDelete(Staff t)
@@ -34,9 +34,19 @@ namespace HotelProject.BusinessLayer.Concrete
             return _staffDal.GetList();
         }
 
+        public int TGetStaffCount()
+        {
+           return _staffDal.GetStaffCount();
+        }
+
         public void TInsert(Staff t)
         {
            _staffDal.Insert(t);
+        }
+
+        public List<Staff> TLast4StaffList()
+        {
+           return _staffDal.Last4StaffList();
         }
 
         public void TUpdate(Staff t)

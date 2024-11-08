@@ -22,6 +22,7 @@ namespace HotelProject.WebUI.Dtos.RegisterDto
         [Required(ErrorMessage = "Şifre tekrar Alanı Gereklidir")]
         [Compare("Password",ErrorMessage ="Şifreler uyuşmuyor")]
         public string ConfirmPassword { get; set; }
+      
 
         [Required(ErrorMessage = "Şehir Alanı Gereklidir")]
         public string City { get; set; }
